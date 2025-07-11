@@ -1,7 +1,22 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  background-color: #0e0e0f;
+  color: white;
+  font-family: 'Poppins', sans-serif;
 }
 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.App {
+  text-align: center;
+  background-color: #0e0e0f; /* dark blue */
+  color: white;
+  min-height: 100vh;
+}
+
+/* Only keep this if you're actually using App-logo */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,8 +28,9 @@
   }
 }
 
+/* OPTIONAL: Keep this only if .App-header is used */
 .App-header {
-  background-color: #282c34;
+  background-color: #0e0e0f; /* ✅ Make this match your dark theme */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,12 +51,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-
-.App {
-  text-align: center;
-  background-color: #0e0e0f; /* dark blue */
-  color: white;
-  min-height: 100vh;
 }
