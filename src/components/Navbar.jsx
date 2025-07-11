@@ -22,10 +22,7 @@ const Navbar = () => {
         <li onClick={() => handleScroll('contact')}>Contact</li>
       </ul>
 
-      <div className="navbar-right">
-        <ThemeToggle />
-        {/* Removed logout button */}
-      </div>
+      
     </nav>
   );
 };
