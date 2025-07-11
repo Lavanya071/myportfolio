@@ -52,3 +52,16 @@ code {
     transform: rotate(360deg);
   }
 }
+body {
+  margin: 0;
+  background-color: #0e0e0f; /* ✅ DARK BACKGROUND */
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App {
+  text-align: center;
+  background-color: #0e0e0f; /* ✅ In case body doesn't apply */
+  color: white;
+  min-height: 100vh;
+}

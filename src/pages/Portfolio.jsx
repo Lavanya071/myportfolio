@@ -5,13 +5,10 @@ import SkillsSection from '../components/SkillsSection';
 import ProjectsSection from '../components/ProjectsSection';
 import ContactSection from '../components/ContactSection';
 import '../styles/Portfolio.css';
-
 const Portfolio = () => {
- 
-
   return (
-    <div className="portfolio-page">
-      <Navbar /> {/* Top navigation bar */}
+    <div className="App">
+      <Navbar />
 
       <main>
         <section id="intro">
@@ -33,5 +30,6 @@ const Portfolio = () => {
     </div>
   );
 };
+
 
 export default Portfolio;
