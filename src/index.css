@@ -12,7 +12,9 @@ code {
     monospace;
 }
 body {
-  background-color: var(--background);
-  color: var(--text-color);
-  transition: background-color 0.4s ease, color 0.4s ease;
+  margin: 0;
+  background-color: #0e0e0f;
+  color: white;
+  font-family: 'Poppins', sans-serif;
 }
+
