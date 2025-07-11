@@ -1,10 +1,10 @@
 .intro-section {
   display: flex;
-  align-items: center;           /* Vertically center the container */
-  justify-content: center;       /* Horizontally center */
-  min-height: 100vh;             /* Full viewport height */
+  align-items: center;            /* Vertically center */
+  justify-content: center;        /* Horizontally center */
+  min-height: 100vh;
   padding: 60px 20px;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), 
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
               url('https://images.unsplash.com/photo-1498050108023-c5249f4df085') center/cover;
   background-size: cover;
   color: white;
@@ -12,26 +12,27 @@
 }
 
 .intro-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  max-width: 1100px;
-  width: 100%;
-  margin: 0 auto;
+  text-align: center;
+  max-width: 800px;
+  animation: slideInFromRight 1s ease forwards;
+  opacity: 0; /* Start hidden, will become visible after animation */
 }
 
-
-.intro-text {
-  flex: 1;
-  min-width: 280px;
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .intro-title {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  
+  color: white;
 }
 
 .highlight {
@@ -41,24 +42,27 @@
     1px -1px 0 white,
     -1px 1px 0 white,
     1px 1px 0 white;
-
 }
 
 .intro-subtitle {
   font-size: 1.5rem;
   margin-bottom: 20px;
+  color: white;
 }
 
 .intro-description {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 30px;
+  color: white;
 }
 
 .intro-links {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
+  margin-top: 20px;
 }
 
 .intro-btn {
@@ -67,43 +71,14 @@
   color: white;
   border-radius: 8px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .intro-btn:hover {
   background-color: var(--accent-dark);
-}
-
-.intro-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-wrapper {
-  width: 260px;
-  height: 260px;
-  padding: 8px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 20px rgba(101, 119, 255, 0.25);
-}
-
-.image-wrapper img {
-  width: 240px;
-  height: 240px;
-  object-fit: cover;
-  object-position: center top; /* 👈 shows more of the head */
-  border-radius: 50%;
-  border: 4px solid white;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.image-wrapper:hover img {
   transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+.project-title{
+   color: white;
 }

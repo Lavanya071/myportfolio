@@ -36,16 +36,17 @@
     transform: rotate(360deg);
   }
 }
-:root {
-  --bg: #ffffff;
-  --text: #121212;
-  --accent: #007bff;
-  --accent-dark: #0056b3;
+
+body {
+  margin: 0;
+  background-color: #002e6d; /* fixed dark blue */
+  color: white;
+  font-family: 'Poppins', sans-serif;
 }
 
-[data-theme='dark'] {
-  --bg: #121212;
-  --text: #ffffff;
-  --accent: #ffd700;
-  --accent-dark: #e6c200;
+.App {
+  text-align: center;
+  background-color: #002e6d; /* dark blue */
+  color: white;
+  min-height: 100vh;
 }

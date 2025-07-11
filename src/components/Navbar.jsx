@@ -1,4 +1,4 @@
-import ThemeToggle from './ThemeToggle';
+
 import '../styles/Navbar.css';
 
 const Navbar = () => {

@@ -101,13 +101,13 @@ const ProjectsSection = () => {
     <section className="projects-section">
       <h2 className="projects-title">Projects</h2>
 
-      <ProjectCategory title="💻 HTML Projects" items={projects.html} />
-      <ProjectCategory title="🎨 CSS Projects" items={projects.css} />
+      <ProjectCategory title="HTML Projects" items={projects.html} />
+      <ProjectCategory title="CSS Projects" items={projects.css} />
       
-      <ProjectCategory title="🧠 HTML + CSS + JavaScript Projects" items={projects.htmlCssJs} />
+      <ProjectCategory title="HTML + CSS + JavaScript Projects" items={projects.htmlCssJs} />
       
-      <ProjectCategory title="⚛️ React-JS Projects" items={projects.react} />
-      <ProjectCategory title="🐍 Python Projects" items={projects.Python} />
+      <ProjectCategory title="React-JS Projects" items={projects.react} />
+      <ProjectCategory title="Python Projects" items={projects.Python} />
 
     </section>
   );

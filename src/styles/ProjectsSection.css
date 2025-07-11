@@ -12,7 +12,7 @@
 .projects-title {
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #1a1a1a;
+  color:blue;
   transition: color 0.4s ease;
 }
 
@@ -77,4 +77,8 @@
 .project-content a:hover {
   color: #b0a8ff;
   text-decoration: underline;
+}
+.projects-title,
+.projects-subtitle {
+  color: white;
 }
