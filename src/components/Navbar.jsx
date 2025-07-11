@@ -11,9 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar-left">
-        <h1 className="navbar-logo">MyPortfolio</h1>
-      </div>
+      
 
       <ul className="navbar-links">
         <li onClick={() => handleScroll('intro')}>Introduction</li>

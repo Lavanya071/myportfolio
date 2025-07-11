@@ -1,14 +1,16 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 16px 32px;
-  background-color: #003366; /* Dark blue background */
+  background-color: #04274b;
   color: var(--text, white);
   position: sticky;
   top: 0;
-  z-index: 100;
-  border-bottom: 1px solid #002244; /* darker blue border */
+  z-index: 100000;
+  border-bottom: 1px solid #002244;
+
+  justify-content: center; /* Center all content horizontally */
+  gap: 40px;               /* Space between logo and links if you keep logo */
 }
 
 .navbar-logo {

@@ -2,10 +2,10 @@
   display: flex;
   align-items: center;            /* Vertically center */
   justify-content: center;        /* Horizontally center */
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 60px 20px;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
-              url('https://images.unsplash.com/photo-1498050108023-c5249f4df085') center/cover;
+  background: linear-gradient(to right, #011532, #011532),
+               center/cover;
   background-size: cover;
   color: white;
   position: relative;
