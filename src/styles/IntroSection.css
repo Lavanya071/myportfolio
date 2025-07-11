@@ -1,4 +1,15 @@
-.intro-section { padding: 60px 20px; background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085') center/cover; background-size: cover; color: white; position: relative; }
+.intro-section {
+  display: flex;
+  align-items: center;           /* Vertically center the container */
+  justify-content: center;       /* Horizontally center */
+  min-height: 100vh;             /* Full viewport height */
+  padding: 60px 20px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), 
+              url('https://images.unsplash.com/photo-1498050108023-c5249f4df085') center/cover;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
 
 .intro-container {
   display: flex;
@@ -7,8 +18,10 @@
   justify-content: space-between;
   gap: 40px;
   max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
 }
+
 
 .intro-text {
   flex: 1;
